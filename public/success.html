@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form example</title>
+  <!-- Normally not the biggest Bootstrap fan, but gets the job done :) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <style>
+    input{display:block; margin-bottom:10px;}
+  </style>
+</head>
+
+<body>
+  <div class="container text-center">
+    <h1 id="name" class="mb-4"></h1>
+    <iframe src="https://giphy.com/embed/3ndAvMC5LFPNMCzq7m" width="384" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <a style="display: block" class="link mt-4" href="index.html">Another go</a>
+  </div>
+
+  <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get('name');
+
+      document.getElementById('name').innerHTML = `Thank you ${name}!`
+  </script>
+</body>
+</html>
