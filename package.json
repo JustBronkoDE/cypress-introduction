@@ -1,0 +1,10 @@
+{
+  "name": "cypress-workshop",
+  "version": "1.0.0",
+  "description": "A brief introduction to Cypress",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lamine Dia",
+  "license": "ISC"
+}
